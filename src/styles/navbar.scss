@@ -26,7 +26,7 @@
   );
   position: fixed;
   bottom: 0;
-  //left 50% and transform:translate will keep navbar centered
+  //left 50% and transform:translate will keep navbar centered cuz react is weird
   left: 50%;
   transform: translateX(-50%);
   max-width: 30rem;
@@ -56,6 +56,7 @@
     stroke: none;
   }
 
+  //i dont think these work anymore but leaving them for now
   .active-exercise {
     fill: #ff875c;
 

@@ -140,20 +140,6 @@ ul {
   color: #ffffffcc;
 }
 
-/* Form */
-
-.search label {
-  display: none;
-}
-
-.search input {
-  background-image: url(src/assets/Search-Icon.svg);
-  background-repeat: no-repeat;
-  background-position-y: center;
-  background-position-x: 0.5rem;
-  padding: 0.5rem 0 0.5rem 2.25rem;
-}
-
 input {
   background-color: var(--black);
   color: white;

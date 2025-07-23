@@ -1,0 +1,35 @@
+// Search
+.search {
+  width: 100%;
+
+  input {
+    background-image: url(src/assets/Search-Icon.svg);
+    background-size: 1.25rem;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 0.5rem;
+    padding: 0.65rem 0 0.65rem 2.25rem;
+    border-radius: 7px;
+    min-width: 220px;
+  }
+
+  svg {
+    width: 10px;
+  }
+
+  input:focus {
+    outline: none;
+  }
+}
+
+.results-list {
+  background-color: var(--black);
+  color: white;
+  font-family: Source Sans;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px solid white;
+  margin-top: 1rem;
+  max-height: 300px;
+}
