@@ -1,0 +1,95 @@
+// NAVBAR STYLES
+
+.flex-grid {
+  display: block;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.nav-flex {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: #bf9aca;
+}
+
+.navbar {
+  background-color: var(--black);
+  border-top: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to right,
+    var(--orange),
+    var(--purple),
+    var(--blue)
+  );
+  position: fixed;
+  bottom: 0;
+  //left 50% and transform:translate will keep navbar centered
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 30rem;
+
+  ul {
+    display: grid;
+    grid-template-columns: 3, 3;
+  }
+
+  a {
+    color: #bf9aca;
+    text-decoration: none;
+  }
+
+  svg {
+    height: 3.125rem;
+    width: 3.125rem;
+  }
+
+  .nutrition,
+  .dashboard {
+    stroke: #bf9bca;
+  }
+
+  .exercise {
+    fill: #bf9aca;
+    stroke: none;
+  }
+
+  .active-exercise {
+    fill: #ff875c;
+
+    p {
+      color: #ff875c;
+    }
+
+    svg {
+      stroke: none;
+    }
+  }
+
+  .active-nutrition {
+    svg {
+      stroke: #96c5b0;
+    }
+
+    p {
+      color: #96c5b0;
+    }
+  }
+
+  .active-dashboard {
+    svg {
+      stroke: #fff;
+    }
+
+    p {
+      color: #fff;
+    }
+  }
+
+  p {
+    margin: 0.25rem;
+    color: #bf9aca;
+  }
+}

@@ -1,0 +1,11 @@
+import { Link } from "react-router-dom";
+
+// Buttons as Links for routing changes
+export default function NavBtn({ className, to, children }) {
+  return (
+    //btn will always be added as a class, as well as any class we add on
+    <button className={className ? `btn ${className}` : "btn"}>
+      <Link to={to}>{children}</Link>
+    </button>
+  );
+}

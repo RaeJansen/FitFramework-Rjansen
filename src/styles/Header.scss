@@ -1,0 +1,24 @@
+header div {
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding-top: 0;
+}
+
+.profile svg {
+  width: 2rem;
+  fill: var(--purple);
+}
+
+.profile p {
+  margin: 0;
+  color: var(--purple);
+  text-decoration: none;
+}
+
+.profile a {
+  text-decoration: none;
+}

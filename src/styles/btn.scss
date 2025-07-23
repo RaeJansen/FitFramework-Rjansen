@@ -1,0 +1,60 @@
+.btn {
+  border-radius: 0.25rem;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  font-family: Hammersmith One, cursive;
+  font-size: large;
+
+  :hover {
+    transition: 1s;
+  }
+}
+
+.nutrition-btn {
+  background-color: #96c5b0;
+  background-image: linear-gradient(to right, #bf9aca, #96c5b0);
+
+  :hover {
+    background-color: var(--blue);
+    background-image: none;
+    color: var(--black);
+    border: none;
+  }
+}
+
+.back-btn {
+  color: white;
+  background-color: var(--black);
+  outline: none;
+  box-shadow: none;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  padding: 1rem 0;
+
+  svg {
+    height: 1.5rem;
+    width: auto;
+  }
+
+  #text {
+    color: white;
+  }
+}
+
+.fullw-btn {
+  width: 100%;
+  padding: 0.75rem 0;
+  font-size: 1.5rem;
+}
+
+.log-btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  color: var(--black);
+  background-color: white;
+  font-family: Hammersmith One, cursive;
+  font-size: large;
+}
