@@ -1,5 +1,5 @@
 import React from "react";
-import NavBtn from "../components/NavBtn";
+import NavBtn from "../../UI/Buttons/NavBtn";
 
 export default function UserProfile() {
   return (

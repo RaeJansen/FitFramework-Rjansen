@@ -1,7 +1,7 @@
 import React from "react";
-import BackBtn from "../components/BackBtn";
+import BackBtn from "../../UI/Buttons/BackBtn";
 
-export default function LogFood() {
+export default function NSearchResults() {
   return (
     <div>
       <BackBtn />
