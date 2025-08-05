@@ -1,12 +1,12 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../../../styles/btn.scss";
 
 // Buttons as Links for routing changes
-export default function NavBtn({ className, to, children }) {
+export default function RouteBtn({ className, to, children }) {
   return (
     //btn will always be added as a class, as well as any class we add on
     <button className={className ? `btn ${className}` : "btn"}>
-      <NavLink to={to}>{children}</NavLink>
+      <Link to={to}>{children}</Link>
     </button>
   );
 }

@@ -1,4 +1,4 @@
-header div {
+header > div {
   background-color: var(--black);
   display: flex;
   justify-content: center;
@@ -6,19 +6,26 @@ header div {
   position: sticky;
   top: 0;
   padding-top: 0;
+  border-bottom: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to right,
+    var(--orange),
+    var(--purple),
+    var(--blue)
+  );
 }
 
-.profile svg {
-  width: 2rem;
-  fill: var(--purple);
-}
-
-.profile p {
-  margin: 0;
-  color: var(--purple);
+.profile {
   text-decoration: none;
-}
+  svg {
+    width: 2rem;
+    fill: white;
+  }
 
-.profile a {
-  text-decoration: none;
+  p {
+    margin: 0;
+    color: white;
+    font-weight: 700;
+  }
 }
