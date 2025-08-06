@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import "../../styles/navbar.scss";
+import "../../styles/layouts.scss";
 import NavigationLink from "../UI/NavigationLink";
 
 export default function NavBar() {

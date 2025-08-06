@@ -10,7 +10,9 @@ export default function NavigationLink({ to, children, navElement }) {
     <NavLink
       to={to}
       // navElement to add classes to navigation
-      className={`nav-flex ${navElement} ${isActive ? "active" : ""}`}
+      className={`nav-flex ${navElement} ${
+        isActive ? `active-${navElement}` : ""
+      }`}
     >
       {children}
     </NavLink>

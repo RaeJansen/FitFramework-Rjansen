@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import "../../../styles/btn.scss";
+import "../../../styles/buttons.scss";
 
 // Buttons as Links for routing changes
 export default function NavBtn({ className, to, children }) {

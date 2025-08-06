@@ -1,26 +1,25 @@
-import { useState } from "react";
 import Header from "./Layouts/Header";
 import NavBar from "./Layouts/NavBar";
+import { Outlet } from "react-router-dom";
 
 function App() {
-  // which navigation button is selected
-  const [activeNav, setActiveNav] = useState("dashboard");
-
   return (
-    <div className="outside-container">
-      <header>
-        <Header />
-      </header>
-
-      <main>
-        <div className="inside-container"></div>
-      </main>
-
-      <footer>
-        <div className="inside-container">
-          <NavBar />
-        </div>
-      </footer>
+    <div className="app">
+      <div className="outside-container">
+        <header>
+          <Header />
+        </header>
+        <main>
+          <div className="content-container">
+            <Outlet />
+          </div>
+        </main>
+        <footer>
+          <div className="inside-container">
+            <NavBar />
+          </div>
+        </footer>
+      </div>
     </div>
   );
 }

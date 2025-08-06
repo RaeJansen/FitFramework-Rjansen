@@ -1,4 +1,4 @@
-import "../../styles/header.scss";
+import "../../styles/layouts.scss";
 import NavigationLink from "../UI/NavigationLink";
 import { useLocation } from "react-router-dom";
 import BackBtn from "../UI/Buttons/BackBtn";
@@ -42,7 +42,7 @@ export default function Header() {
 
   return (
     <div className="inside-container">
-      <BackBtn />
+      {pageTitle === "FitFramework" ? "" : <BackBtn />}
 
       {/* Current Page Title */}
       <h1 className="profile-heading">{pageTitle}</h1>

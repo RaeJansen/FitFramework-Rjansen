@@ -90,11 +90,24 @@ select {
 
 /* GENERAL STYLES */
 
+.app {
+  background: linear-gradient(
+    55deg,
+    #3a2e41 -3.56%,
+    #1e1825 28.02%,
+    #1e1825 73.25%,
+    #2f3038 100.7%
+  );
+}
+
 .outside-container {
   margin: 0;
   position: relative;
-  background-color: #1e1825;
   height: 100vh;
+}
+
+.content-container {
+  margin: 1rem 2rem;
 }
 
 ul,
@@ -133,12 +146,13 @@ p,
 input::placeholder,
 ul {
   font-family: Source Sans, Cursive;
-  color: #ffffffcc;
+  color: #1e1825cc;
 }
 
 input {
+  font-family: source sans;
   background-color: var(--black);
-  color: white;
+  color: var(--black);
   border: white 2px solid;
   border-radius: 0.25rem;
   padding: 0.5rem 1rem;
@@ -177,8 +191,4 @@ img {
 /* section */
 section {
   padding: 1rem;
-}
-
-ul {
-  padding-bottom: 0.5rem;
 }

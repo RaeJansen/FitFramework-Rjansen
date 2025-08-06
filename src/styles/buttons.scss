@@ -2,7 +2,6 @@
   border-radius: 0.25rem;
   border: none;
   padding: 0.5rem 1.25rem;
-  font-family: Hammersmith One, cursive;
   font-size: large;
 
   :hover {
@@ -22,18 +21,30 @@
   }
 }
 
-.back-btn {
+.sm-button {
+  font-family: Source Sans;
   color: white;
   background-color: var(--black);
   outline: none;
-  box-shadow: none;
+  padding: 0.25rem 0.25rem;
+  border-radius: 0.46875rem;
+  border-right: 1px solid #bf9aca;
+  border-bottom: 1px solid #bf9aca;
+  background: linear-gradient(
+    206deg,
+    rgba(30, 24, 37, 0.2) 14.64%,
+    rgba(113, 90, 139, 0.2) 323.64%
+  );
+  box-shadow: 1px 0 4px 0 #bf9aca inset;
+}
+
+.back-btn {
   display: flex;
   gap: 0.25rem;
   align-items: center;
-  padding: 1rem 0;
 
   svg {
-    height: 1.5rem;
+    height: 0.8125rem;
     width: auto;
   }
 
