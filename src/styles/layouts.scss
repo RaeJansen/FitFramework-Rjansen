@@ -1,0 +1,114 @@
+// NAVBAR STYLES
+
+.flex-grid {
+  display: block;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.nav-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: #bf9aca;
+}
+
+.navbar {
+  border-top: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to right,
+    var(--orange),
+    var(--purple),
+    var(--blue)
+  );
+  position: fixed;
+  bottom: 0;
+  //left 50% and transform:translate will keep navbar centered cuz react is weird
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 20rem;
+
+  ul {
+    display: grid;
+    grid-template-columns: 3, 3;
+  }
+
+  a {
+    color: #bf9aca;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  svg {
+    height: 3.125rem;
+    width: 3.125rem;
+  }
+
+  .nutrition,
+  .exercise,
+  .dashboard {
+    fill: #bf9aca;
+    padding: 0.5rem 0;
+  }
+
+  .active-nutrition {
+    fill: var(--blue);
+    color: var(--blue);
+  }
+
+  .active-exercise {
+    fill: var(--orange);
+    color: var(--orange);
+  }
+
+  .dashboard svg,
+  .active-dashboard svg {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+// HEADER STYLES
+
+header > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding-top: 0;
+  border-bottom: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to right,
+    var(--orange),
+    var(--purple),
+    var(--blue)
+  );
+  min-width: 20rem;
+}
+
+.profile {
+  padding: 0.5rem 0;
+  text-decoration: none;
+  svg {
+    width: 2rem;
+    fill: white;
+  }
+
+  p {
+    margin: 0;
+    color: white;
+    font-weight: 700;
+  }
+}
+
+.active-profile {
+  svg {
+    fill: var(--purple);
+  }
+  p {
+    color: #bf9aca;
+  }
+}

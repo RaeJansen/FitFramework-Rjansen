@@ -1,0 +1,194 @@
+// RESET STYLES
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// OUR STYLES
+
+:root {
+  --black: #1e1825;
+  --blue: #96c5b0;
+  --purple: #bf9aca;
+  --orange: #ff875c;
+}
+
+@font-face {
+  font-family: "Hammersmith One";
+  src: url(../assets/HammersmithOne.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans";
+  src: url(../assets/SourceSans3.ttf);
+}
+
+@font-face {
+  font-family: "Source Sans Italic";
+  src: url(../assets/SourceSans3-Italic.ttf);
+}
+
+/* GENERAL STYLES */
+
+.app {
+  background: linear-gradient(
+    55deg,
+    #3a2e41 -3.56%,
+    #1e1825 28.02%,
+    #1e1825 73.25%,
+    #2f3038 100.7%
+  );
+}
+
+.outside-container {
+  margin: 0;
+  position: relative;
+  height: 100vh;
+}
+
+.content-container {
+  margin: 1rem 2rem;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+svg {
+  width: 3.125rem;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.5rem;
+  min-width: 9.5rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Hammersmith One;
+}
+
+p,
+input::placeholder,
+ul {
+  font-family: Source Sans, Cursive;
+  color: #1e1825cc;
+}
+
+input {
+  font-family: source sans;
+  background-color: var(--black);
+  color: var(--black);
+  border: white 2px solid;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.measurement {
+  display: flex;
+}
+
+.log-input {
+  border-end-end-radius: 0;
+  border-top-right-radius: 0;
+  border-right: none;
+  width: 3rem;
+}
+
+/* Img */
+img {
+  width: 30vw;
+  height: auto;
+  border-right: 2px white solid;
+  object-fit: cover;
+}
+
+/* log food */
+.log-food {
+  display: flex;
+  gap: 0.5rem;
+  border: 2px white solid;
+  padding: 0;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+/* section */
+section {
+  padding: 1rem;
+}
