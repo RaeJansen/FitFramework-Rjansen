@@ -1,0 +1,165 @@
+:root {
+  --black: #1e1825;
+  --blue: #96c5b0;
+  --purple: #bf9aca;
+}
+
+@font-face {
+  font-family: "Hammersmith One";
+  src: url(./assets/HammersmithOne.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans";
+  src: url(./assets/SourceSans3.ttf);
+}
+
+@font-face {
+  font-family: "Source Sans Italic";
+  src: url(./assets/SourceSans3-Italic.ttf);
+}
+
+/* General */
+
+html {
+  background-color: #1e1825;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  color: white;
+}
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Hammersmith One;
+}
+
+p,
+input::placeholder,
+ul {
+  font-family: Source Sans, Cursive;
+  color: #ffffffcc;
+}
+
+.container {
+  background-color: var(--black);
+  margin: 0;
+  padding: 2rem;
+}
+
+/* Button */
+
+.btn-component {
+  background-image: linear-gradient(to right, #bf9aca, #96c5b0);
+  color: var(--black);
+  background-color: #96c5b0;
+  border-radius: 0.25rem;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  font-family: Hammersmith One, cursive;
+  font-size: large;
+}
+
+.btn-component:hover {
+  background-color: var(--blue);
+  background-image: none;
+  color: var(--black);
+  border: none;
+  transition: 1s;
+}
+
+.fullw-btn {
+  width: 100%;
+  padding: 0.75rem 0;
+  font-size: 1.5rem;
+}
+
+.log-btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  color: var(--black);
+  background-color: white;
+  font-family: Hammersmith One, cursive;
+  font-size: large;
+}
+
+/* Form */
+
+.search label {
+  display: none;
+}
+
+.search input {
+  background-image: url(src/assets/Search-Icon.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 0.5rem;
+  padding: 0.5rem 0 0.5rem 2.25rem;
+}
+
+input {
+  background-color: var(--black);
+  color: white;
+  border: white 2px solid;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.measurement {
+  display: flex;
+}
+
+.log-input {
+  border-end-end-radius: 0;
+  border-top-right-radius: 0;
+  border-right: none;
+  width: 3rem;
+}
+
+/* Img */
+img {
+  width: 30vw;
+  height: auto;
+  border-right: 2px white solid;
+  object-fit: cover;
+}
+
+/* log food */
+.log-food {
+  display: flex;
+  gap: 0.5rem;
+  border: 2px white solid;
+  padding: 0;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+/* section */
+section {
+  padding: 1rem;
+}
+
+ul {
+  padding-bottom: 0.5rem;
+}
