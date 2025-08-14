@@ -1,0 +1,25 @@
+.progressbar {
+  font-family: hammersmith one;
+  background-color: #fff;
+  border-radius: var(--b-rad);
+  color: var(--black);
+  display: flex;
+  padding: 0.2rem;
+  justify-items: center;
+  align-items: center;
+
+  p {
+    font-family: hammersmith one;
+  }
+
+  div {
+    background-color: var(--black);
+    border-radius: var(--b-rad);
+    padding: 0.4rem;
+    width: 60%;
+
+    p {
+      color: #fff;
+    }
+  }
+}

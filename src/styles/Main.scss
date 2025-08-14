@@ -31,6 +31,8 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  color: white;
+  font-family: source sans;
 }
 
 /* A elements that don't have a class get default styles */
@@ -69,6 +71,7 @@ select {
   --blue: #96c5b0;
   --purple: #bf9aca;
   --orange: #ff875c;
+  --b-rad: 0.625rem;
 }
 
 @font-face {
@@ -147,27 +150,6 @@ input::placeholder,
 ul {
   font-family: Source Sans, Cursive;
   color: #1e1825cc;
-}
-
-input {
-  font-family: source sans;
-  background-color: var(--black);
-  color: var(--black);
-  border: white 2px solid;
-  border-radius: 0.25rem;
-  padding: 0.5rem 1rem;
-  margin-bottom: 1rem;
-}
-
-.measurement {
-  display: flex;
-}
-
-.log-input {
-  border-end-end-radius: 0;
-  border-top-right-radius: 0;
-  border-right: none;
-  width: 3rem;
 }
 
 /* Img */
